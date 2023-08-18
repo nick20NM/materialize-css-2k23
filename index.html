@@ -6,46 +6,87 @@
     <title>My Website</title>
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-4-utilities.min.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- navbar -->
     <nav class="bg-primary">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> <!-- side navbar button -->
-              <a href="#" class="brand-logo">TechSoft Official</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons left">home</i>Home</a></li>
-                <li><a href="badges.html"><i class="material-icons left">assignment_ind</i>About</a></li>
-                <li><a href="collapsible.html"><i class="material-icons left">call_end</i>Contact Us</a></li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" data-target="slide-out" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          > <!-- side navbar button -->
+          <a href="#" class="brand-logo">TechSoft Official</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="sass.html"
+                ><i class="material-icons left">home</i>Home</a
+              >
+            </li>
+            <li>
+              <a href="badges.html"
+                ><i class="material-icons left">assignment_ind</i>About</a
+              >
+            </li>
+            <li>
+              <a href="collapsible.html"
+                ><i class="material-icons left">call_end</i>Contact Us</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- end of navbar -->
 
     <!-- side nav -->
     <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
+      <li>
+        <div class="user-view">
           <div class="background">
-            <img src="img/bg1.jpg">
+            <img src="img/bg1.jpg" />
           </div>
-          <a href="#user"><img class="circle" src="img/dp1.jpg"></a>
+          <a href="#user"><img class="circle" src="img/dp1.jpg" /></a>
           <a href="#name"><span class="white-text name">NM</span></a>
-          <a href="#email"><span class="white-text email">nm@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>Website</a></li>
-        <li><a href="#!"><i class="material-icons">call_end</i>Contact Us</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Social Links</a></li>
-        <li><a class="waves-effect" href="#!">Facebook</a></li>
-        <li><a class="waves-effect" href="#!">Instagram</a></li>
-        <li><a class="waves-effect" href="#!">LinkedIn</a></li>
-      </ul>
-      
+          <a href="#email"
+            ><span class="white-text email">nm@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">home</i>Home</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">cloud</i>Website</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">call_end</i>Contact Us</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Social Links</a></li>
+      <li><a class="waves-effect" href="#!">Facebook</a></li>
+      <li><a class="waves-effect" href="#!">Instagram</a></li>
+      <li><a class="waves-effect" href="#!">LinkedIn</a></li>
+    </ul>
+
     <!-- end of side nav -->
+
+    <!-- section 1- parallax -->
+    <section style="height: 1200px;">
+        <div class="parallax-container">
+          <div class="parallax"><img src="img/bg2.png" /></div>
+          <div class="container center-align mt-5 pt-5">
+            <h2 class="white-text mt-2">TechSoft INDIA</h2>
+            <p class="white-text flow-text">Hi, friends subscribe to my youtube channel for latest update.</p>
+            <button class="btn bg-primary btn-large">Subscribe</button>
+          </div>
+        </div>
+    </section>
+    <!-- end of section 1 -->
 
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -56,9 +97,10 @@
     <script>
       $(document).ready(function () {
         // jQuery or javascript
-        $('.sidenav').sidenav({
-            edge: 'right' // for opening side nav from right
+        $(".sidenav").sidenav({
+          edge: "right", // for opening side nav from right
         });
+        $(".parallax").parallax();
       });
     </script>
   </body>
